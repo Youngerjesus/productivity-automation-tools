@@ -1,0 +1,11 @@
+.idea
+.ipynb_checkpoints
+.vscode
+.env 
+files/.env 
+langchain_cookbook/
+path/
+system_design/
+tickets/ 
+venv/ 
+env/
