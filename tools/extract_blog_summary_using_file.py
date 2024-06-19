@@ -11,23 +11,22 @@ from langchain_core.output_parsers import StrOutputParser
 import json 
 from prompts import * 
 from utils import * 
+import os 
 
 
 set_llm_cache(None)  # This will disable the caching globally
 
-def extract_page_content(URL):
-    loader = WebBaseLoader(URL)
-    documents = loader.load()
-    doc = documents[0]
-    return doc.page_content
-
-# This will load the blog post from the URL
-URL = "https://div.beehiiv.com/p/routing-query-construction"
-
 # This is title of the blog post
-title = "Routing and Query Construction"
+title = "100X Scaling: How Figma Scaled its Databases"
 
-document = extract_page_content(URL)
+
+# Get the current working directory
+current_working_directory = os.getcwd()
+
+print(f"Current working directory: {current_working_directory}")
+
+with open("./tools/document.md", "r") as file:
+    document = file.read()
 
 statement_llm = ChatOpenAI(
     temperature=0.1, 

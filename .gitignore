@@ -2,10 +2,12 @@
 .ipynb_checkpoints
 .vscode
 .env 
-files/.env 
+cookbook/.env 
 langchain_cookbook/
 path/
 system_design/
 tickets/ 
 venv/ 
 env/
+output/
+input/

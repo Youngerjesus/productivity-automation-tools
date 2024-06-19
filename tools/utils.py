@@ -1,7 +1,7 @@
 import os
 import re
 
-directory_path = "files/"
+directory_path = "output/"
 version_pattern = r"v\d+\.\d+\.\d+"
 default_version = "v0.0.0"
 
