@@ -3,6 +3,8 @@
 .vscode
 .env 
 cookbook/.env 
+cookbook/.ipynb_checkpoints/
+cookbook/bleurt/ 
 langchain_cookbook/
 path/
 system_design/
